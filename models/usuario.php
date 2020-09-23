@@ -78,7 +78,7 @@ class Usuario{
     
 
     public function save(){
-        $sql ="INSERT INTO usuario VALUES(NULL, '{$this->getNombre()}', '{$this->getApellido()}', '{$this->getEmail()}', '{$this->getPassword()}', {$this->getTelefono()}, 'user', 'NULL', 'NULL')";
+        $sql ="INSERT INTO usuarios VALUES(NULL, '{$this->getNombre()}', '{$this->getApellido()}', '{$this->getEmail()}', '{$this->getPassword()}', {$this->getTelefono()}, 'user', 'NULL', 'NULL')";
         $save = $this->db->query($sql);
         echo mysqli_error($this->db);
 
@@ -95,7 +95,7 @@ class Usuario{
         $email = $this->email;         
         
         //comprobar si existe
-        $sql = "SELECT email FROM usuario WHERE email = '$email'";
+        $sql = "SELECT email FROM usuarios WHERE email = '$email'";
         $login = $this->db->query($sql);
         $usuario = $login->fetch_object();
        
@@ -112,7 +112,7 @@ class Usuario{
     public function EmailporUser($tabla){//saca en una variable $tabla los datos de la BD
         $email = $this->email;  
         //comprobar si existe
-        $sql = "SELECT * FROM usuario WHERE email = '$email'";
+        $sql = "SELECT * FROM usuarios WHERE email = '$email'";
         $login = $this->db->query($sql);
         $usuario = $login->fetch_object();
        
@@ -129,7 +129,7 @@ class Usuario{
     public function UserporCodigo($tabla){//saca en una variable $tabla los datos de la BD
         $codigo = $this->codigo;  
         //comprobar si existe
-        $sql = "SELECT * FROM usuario WHERE codigo = '$codigo' LIMIT 1";
+        $sql = "SELECT * FROM usuarios WHERE codigo = '$codigo' LIMIT 1";
         $login = $this->db->query($sql);
         $usuario = $login->fetch_object();
        
@@ -145,7 +145,7 @@ class Usuario{
 
     public function recoverPassword($tabla){
         $email = $this->email;  
-        $sql = "UPDATE usuario SET codigo='{$this->getCodigo()}', fecha_recuperacion='{$this->getFecha_recuperacion()}' WHERE email = '$email' ";
+        $sql = "UPDATE usuarios SET codigo='{$this->getCodigo()}', fecha_recuperacion='{$this->getFecha_recuperacion()}' WHERE email = '$email' ";
         $save = $this->db->query($sql);
 
         $result = false;
@@ -175,7 +175,7 @@ class Usuario{
         $password = $this->password;
 
         //comprobar si existe
-        $sql = "SELECT * FROM usuario WHERE email = '$email'";
+        $sql = "SELECT * FROM usuarios WHERE email = '$email'";
         $login = $this->db->query($sql);
 
         if($login && $login->num_rows == 1){

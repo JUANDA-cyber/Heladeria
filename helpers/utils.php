@@ -25,6 +25,48 @@ class Utils{
             }
     }
 
+    public static function showCategorias(){
+        require_once 'models/categoria.php';
+        $categoria = new Categoria();
+        $categorias = $categoria->getAll();
+        return $categorias;
+    }
+    
+    public static function statsCarrito(){
+        //si no existe la sesion del carrito
+        $stats =array(
+            'count' => 0,
+            'total' => 0
+        ); 
+        
+        //Si existe la sesion del carrito
+        if(isset($_SESSION['carrito'])){                    
+            $stats['count'] = count($_SESSION['carrito']);  //la cantidad de los productos del carrito es el valor de count 
+            
+            foreach($_SESSION['carrito'] as $producto){//recorrer el carrito y sacar el producto 
+                $stats['total'] += $producto['precio']*$producto['unidades'];   //para calcular el total 
+            }
+        }
+        return $stats;
+    }
+
+    public static function showStatus($status){
+        $value = 'Pendiente';
+        if($status == 'confirm'){
+            $value = 'Pendiente';
+
+        }elseif($status == 'preparation'){
+            $value = 'En preparación';
+
+        }elseif($status == 'ready'){
+            $value = 'Preparado para enviar';
+
+        }elseif($status == 'sended'){
+            $value = 'Enviado';
+        }
+        return $value;
+    }  
+
     // public static function actualizar_datos(){
     //     //Contenido para actualizar las variables de $_SESSION['']
     //     $_SESSION['identity'] = $VARIBLE_HOST;    

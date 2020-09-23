@@ -25,7 +25,7 @@ class usuarioController {
     public function mostrarTodos(){       
         Utils::isAdmin(); 
         $usuario = new Usuario();
-        $todos_los_usuarios = $usuario->conseguirTodos('usuario');
+        $todos_los_usuarios = $usuario->conseguirTodos('usuarios');
         require_once 'views/usuario/mostrar-todos.php';
     }
 
@@ -44,7 +44,7 @@ class usuarioController {
         $id = $_SESSION['identity']->id;      
         $usuario = new Usuario();
         $usuario->setId($id);
-        $todos_los_usuarios = $usuario->conseguirUno('usuario');
+        $todos_los_usuarios = $usuario->conseguirUno('usuarios');
         // var_dump($todos_los_usuarios);
         // die();
         require_once 'views/usuario/perfil.php';
@@ -66,7 +66,7 @@ class usuarioController {
                 $usuario->setTelefono($telefono);
                 // var_dump($usuario);
                 // die();
-                $save = $usuario->UpdateUser('usuario');
+                $save = $usuario->UpdateUser('usuarios');
 
                 if($save){
 
@@ -97,7 +97,7 @@ class usuarioController {
             // Instance new Model (Song)
             $usuario = new Usuario();
             $usuario->setCodigo($codigo);
-            $user = $usuario->UserporCodigo('usuario');
+            $user = $usuario->UserporCodigo('usuarios');
 
             if ($user === false) {
                 $mensaje = 'El código de recuperación de contraseña no es valido. Por favor intenta de nuevo.';
@@ -128,7 +128,7 @@ class usuarioController {
                 $usuario->setId($id);            
                 $usuario->setPassword($password);       
                 //var_dump($usuario);
-                $save = $usuario->UpdatePasswordWithRecover('usuario');   
+                $save = $usuario->UpdatePasswordWithRecover('usuarios');   
                     
                 header('location:'.base_url.'usuario/entrar');            
             }else{
@@ -146,7 +146,7 @@ class usuarioController {
 
             $usuario = new Usuario();
             $usuario->setEmail($email);
-            $user = $usuario->EmailporUser('usuario');
+            $user = $usuario->EmailporUser('usuarios');
             
             if ($user === false) {
                 $mensaje = 'El correo electrónico no se encuentra registrado en el sistema.';
@@ -157,7 +157,7 @@ class usuarioController {
                 $usuario->setEmail($email);
                 $usuario->setCodigo($codigo);
                 $usuario->setFecha_recuperacion($fecha_recuperacion);
-                $respuesta = $usuario->recoverPassword('usuario');
+                $respuesta = $usuario->recoverPassword('usuarios');
                 
                 if ($respuesta) {              
                     $this->sendMail($email, $user->nombre, $codigo);
@@ -184,7 +184,7 @@ class usuarioController {
 
             $usuario = new Usuario();
             $usuario->setEmail($email);
-            $user = $usuario->EmailporUser('usuario');
+            $user = $usuario->EmailporUser('usuarios');
             
             if ($user === false) {
                 $mensaje = 'El correo electrónico no se encuentra registrado en el sistema.';
@@ -195,7 +195,7 @@ class usuarioController {
                 $usuario->setEmail($email);
                 $usuario->setCodigo($codigo);
                 $usuario->setFecha_recuperacion($fecha_recuperacion);
-                $respuesta = $usuario->recoverPassword('usuario');
+                $respuesta = $usuario->recoverPassword('usuarios');
                 
                 if ($respuesta) {              
                     $this->sendMail($email, $user->nombre, $codigo);
@@ -326,7 +326,7 @@ class usuarioController {
         // die();
         $usuario = new Usuario();
         $usuario->setEmail($_POST['email']);
-        $todos_los_usuarios = $usuario->conseguirEmail('usuario');
+        $todos_los_usuarios = $usuario->conseguirEmail('usuarios');
         // return $todos_los_usuarios;
         print JSON_encode($todos_los_usuarios, JSON_UNESCAPED_UNICODE);
 
