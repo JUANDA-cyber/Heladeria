@@ -1,0 +1,470 @@
+@media (max-width: 1211px){
+    .arreglo-x2{
+        height: 100px;
+    }
+    .bloques-calculo {
+        height: 1880px;
+    }
+    .form-group3 {
+        height: 712px;
+    }
+    .col-lg-3 {
+        margin-right: 5px;
+        max-width: 30% !important;
+    }
+    .input-element label {
+        font-size: 14px;
+    }    
+}
+
+@media (max-width: 1080px){
+    .bloques .wrap {
+        margin-left: 5px;
+    }
+    .form-group1 {
+        height: 615px;
+    }
+    .form-group2 {
+        height: 540px;
+    }
+    #label-select {
+        float: none;
+        width: 100%;
+    }
+    .input-select select,
+    .input-select2 select{
+        width: 79%;
+    }
+    #label-select2 a {      
+        margin-left: 10px;
+    }           
+    .input-select2 select, 
+    .input-text input[type="text"], 
+    .input-text input[type="date"]{        
+        width: 80%;
+    }
+    .col-lg-3 {
+        max-width: 35% !important;
+    }
+    .form-group3 {
+        height: 940px;
+    }
+    .bloques-calculo {
+        height: 2480px;
+    }    
+}
+
+/*footer*/
+@media only screen and (min-width: 768px) and ( max-width: 991px) {
+   .md-mb-30{
+    margin-bottom: 30px;
+   }
+}
+
+@media only screen and (max-width: 767px){
+    .sm-mb-30{
+        margin-bottom: 30px;
+    }
+    .footer-top{
+        padding: 50px 0;
+    }
+}
+
+
+
+
+/*principal*/
+@media(max-width:1024px){
+	.caption {
+		width: 63%;
+		top: 31%;
+		left: 19%;
+	}
+}
+
+@media (max-width: 987px){
+    #aside .name-user h2 {
+        font-size: 16px;
+    }
+    #aside .gestion a {
+        font-size: 13px;
+    }
+    /*Dis calculos*/
+    .input-select select,
+    .input-select2 select{
+        width: 69%;
+        margin-right: 2px;
+    }
+    #label-select2 {
+        margin-bottom: 50px;
+    }
+    #label-select2 p {
+        font-size: 13px;
+    }
+    label {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 23px !important;
+    }
+    .form-group1{
+        height: 635px;
+    }
+    .arreglo-x{
+    height: 78px;
+    }
+
+    .form-group2 {
+        height: 540px;
+    }
+    .input-text input[type="text"], 
+    .input-text input[type="date"] {
+        width: 69%;
+    }
+    .form-group3 {
+        height: 950px;
+    }
+    .bloques .wrap{
+        width: 100%;
+    }
+    .bloques-calculo {
+        height: 2530px;
+    }    
+    .bloques .name-block-maiz, 
+    .bloques .name-block-algodon {        
+        width: 76%;
+    }
+    .bloques {
+        height: 700px;
+    }
+    
+    .bloque1, 
+    .bloque2 {
+        width: 50%;
+        margin-left: 22%;
+    }
+}
+
+@media (max-width: 888px){
+    .col-lg-3 {
+        max-width: 50% !important;
+    }
+    .bloques-calculo {
+        height: 3155px;
+    }
+    .form-group3 {
+        height: 1560px;
+    }
+}
+
+@media (max-width: 815px){ 
+    #aside {
+       width: 110%;
+    }
+    #aside .name-user h2 {
+        font-size: 14px;
+    }
+    #aside .gestion a {
+        height: 50px;
+        font-size: 12px;
+    }
+    .arreglo-x h3,
+    .arreglo-x2 h3{
+        font-size: 20px !important;
+    }    
+}
+/* tabla de eleementos - historial resultado  */
+@media(max-width:768px){ 
+    .tablareq td, .tablareq th {
+        font-weight: normal;
+        font-size: 12px;
+    }   
+}
+
+
+/*principal*/
+@media(max-width:768px){
+	.caption {
+		width: 70%;
+		top: 22%;
+		left: 13%;
+    }
+    
+    .navbar-nav .nav-link{
+        text-align: center !important; 
+    }
+    .navbar-text{
+        text-align: center !important;
+    }
+
+}
+
+@media (max-width: 725px){      
+    .bloque1, 
+    .bloque2 {
+        margin-left: 23%;
+    }
+
+    .bloques-calculo {
+        height: 3150px;
+    }
+    .bloques .name-block-maiz, 
+    .bloques .name-block-algodon {
+        width: 65%;
+        margin-left: 15%;
+    }
+
+    .bloques .name-block-algodon-second {
+        display: block;
+        margin: 20px;
+        margin-top: 20px;
+        width: 28%;
+        color: #628d1d;
+        border-bottom: 1px solid#333333;
+        padding-bottom: 3px;
+        margin-top: 260px;
+    }
+    .arreglo-x, 
+    .arreglo-x2 {
+        padding-left: 22px;
+    }
+    .btn {
+        font-size: 20px !important;
+        padding: 7px !important;
+}
+
+@media(max-width: 670px){
+    .arreglo-x h3, 
+    .arreglo-x2 h3 {
+        font-size: 20px !important;
+        margin-right: 10px !important;
+    }
+    .arreglo-x2 {
+        height: 120px;
+    }
+    .bloques-calculo {
+        height: 3150px;
+    }
+    .arreglo-x p, 
+    .arreglo-x2 p {
+        font-size: 13px;
+    }
+    .input-select select, 
+    .input-select2 select {
+        width: 90%;
+    }
+    #label-select2 a{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    
+    #label-select2 {
+        margin-bottom: 117px;    
+    }
+    .label-textura{
+        margin-bottom: 35px !important;
+    }
+    .form-group1 {
+        height: 835px;    
+    }
+    .form-group3 {
+        height: 1540px;
+    }
+    .bloques-calculo {
+        height: 3350px;
+    }
+    
+}
+
+
+/*principal*/
+@media(max-width:640px){
+	.caption {
+		width: 70%;
+		top: 12%;
+		left: 13%;
+	}
+	.callbacks_tabs a:after {
+		height: 10px;
+		width: 10px;
+	}
+}
+
+@media(max-width: 632px){
+    .btn {
+        font-size: 16px !important;
+        padding: 4px !important;
+    }
+}
+
+
+@media(max-width: 594px){
+
+    .form-group3 {
+        height: 1565px;
+    }
+    .bloques-calculo {
+        height: 3374px;
+    }
+    span.number, 
+    span.number2, 
+    span.number3 {
+        margin-left: 5px;
+    }
+
+    .form-group1, 
+    .form-group2, 
+    .form-group3 {
+        width: 90%;
+        margin-left: 15px;
+    }
+    label {
+        font-size: 16px;
+    }
+    .input-text input[type="text"], 
+    .input-text input[type="date"] {
+        width: 92%;
+    }
+    .arreglo-x {
+        height: 100px;
+    }
+    .arreglo-x2 {
+        height: 130px;
+    }
+    .arreglo-x, .arreglo-x2 {
+        width: 90%;
+        margin-left: 15px;
+    }
+
+    .arreglo-x h3, 
+    .arreglo-x2 h3 {
+        font-size: 22px !important;
+        margin-right: 9px;
+        font-weight: bold ;
+    }
+    .arreglo-x p, 
+    .arreglo-x2 p {
+       font-weight: bold;
+    }
+
+    .input-select select, 
+    .input-select2 select {
+        width: 100%;
+    }
+    .col-lg-3 {
+        max-width: 95% !important;
+    }
+    .form-group3 {
+        height: 1510px;
+    }
+    .arreglo-x, 
+    .arreglo-x2 {
+        margin-left: 17px;
+        padding-left: 30px;
+    }
+    span.number, 
+    span.number2, 
+    span.number3 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .btn {
+        font-size: 13px !important;
+        padding: 8px !important;
+    }
+}
+
+@media(max-width:480px){
+	.caption {
+		width: 70%;
+		top: 14%;
+		left: 13%;
+	}
+	.callbacks_tabs a:after {
+		height:4px;
+		width: 4px;
+	}
+	ul.callbacks_tabs.callbacks1_tabs {
+		bottom: 10px;
+		left: 4px;
+	}
+}
+
+@media(max-width: 445px){
+   
+    .bloques-calculo {
+        height: 3510px;
+    }
+
+    .bloques {
+        width: 90%;
+        margin-left: 20px;
+    }
+   
+    .bloque1,
+    .bloque2{
+        width: 180px;
+    }
+    #aside .gestion .usuarios {
+        height: 45px;
+    }
+
+    /*DIS calculo*/
+
+    .col-3 {
+        max-width: 34%;
+    }
+    .col-9 {
+        max-width: 60%;
+    }
+    #aside {
+        padding-right: 10px;
+    } 
+
+    .bloques-calculo {
+        height: 3540px;
+    }
+
+    .arreglo-x2 h3 {
+        font-size: 20px !important;
+    }
+
+    #label-select {
+        margin-bottom: 77px;
+    }
+    
+    .form-group1 {
+        height: 880px;
+    }
+    .form-group2 {
+        height: 620px;
+    }
+    .bloques-calculo {
+        height: 3540px;
+    }
+   
+    .tablareq td, .tablareq th {
+        font-size: 8px;
+    }
+
+}
+
+/*principal*/
+@media(max-width:320px){
+	.caption {
+		width: 70%;
+		top: 14%;
+		left: 13%;
+	}
+	.callbacks_tabs a:after {
+		height:4px;
+		width: 4px;
+	}
+	ul.callbacks_tabs.callbacks1_tabs {
+		bottom: 10px;
+		left: 4px;
+	}
+}
+
+}
+
